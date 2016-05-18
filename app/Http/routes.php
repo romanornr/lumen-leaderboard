@@ -13,7 +13,13 @@
 $app->get('/', function (){
 	return view('welcome');
 });
-// $app->get('/', function () use ($app) {
-//     return $app->version();
-// });
 
+$app->group(['prefix' => 'api/v1','namespace'=>'App\Http\controllers'], function($app)
+{
+	$app->get('players','PlayerController@index');
+	$app->get('players{id}','PlayerController@getPlayer');
+	
+	$app->post('players','PlayerController@createPlayer');
+	$app->put('players/{id}','PlayerController@updatePlayer');
+	$app->delete('players/{id}','PlayerController@deletePlayer');
+});
