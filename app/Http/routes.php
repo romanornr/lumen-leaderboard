@@ -14,7 +14,7 @@ $app->get('/', function (){
 	return view('welcome');
 });
 
-$app->group(['prefix' => 'api/v1','namespace'=>'App\Http\controllers'], function($app)
+$app->group(['prefix' => 'api/v1','namespace'=>'App\Http\Controllers'], function($app)
 {
 	$app->get('players','PlayerController@index');
 	$app->get('players{id}','PlayerController@getPlayer');

@@ -10,7 +10,7 @@ class Players extends Model
 	 * table from players
 	 * @var
 	 */
-	protected $table = 'Players';
+	protected $table = 'players';
 
 	/**
 	 * guard id, created_at and updated_at
