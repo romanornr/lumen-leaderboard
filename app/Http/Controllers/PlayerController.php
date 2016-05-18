@@ -25,14 +25,14 @@ class PlayerController extends Controller
     public function createPlayer(Request $request)
     {
         $player = Players::create($request->all());
-        return reponse()->json($player);
+        return response()->json($player);
     }
 
     public function deletePlayer($id)
     {
         $player = Player::find($id);
         $player->delete();
-        return response()->json('player deleted');
+        return response()->json($players);
     }
 
     public function updatePlayer(Request $request, $id)

@@ -17,7 +17,7 @@ $app->get('/', function (){
 $app->group(['prefix' => 'api/v1','namespace'=>'App\Http\Controllers'], function($app)
 {
 	$app->get('players','PlayerController@index');
-	$app->get('players{id}','PlayerController@getPlayer');
+	$app->get('players/{id}','PlayerController@getPlayer');
 	
 	$app->post('players','PlayerController@createPlayer');
 	$app->put('players/{id}','PlayerController@updatePlayer');
