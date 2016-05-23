@@ -6,7 +6,7 @@
 * **URL**
 
   api/v1/players
-
+yo
 * **Method:**
   
   <_The request type_>
@@ -18,10 +18,6 @@
    **Required:**
  
    `id=[integer]`
-
-   **Optional:**
- 
-   `photo_id=[alphanumeric]`
 
 * **Data Params for a POST request type**
 
@@ -65,7 +61,7 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
+    **Content:** `{ id : 12, username : "jake276", score: 362 }`
  
 * **Error Response:**
 
