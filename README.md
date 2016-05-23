@@ -23,10 +23,10 @@
  
    `photo_id=[alphanumeric]`
 
-* **Data Params**
+* **Data Params for a POST request type**
 
-  <username>
-  <score>
+  username<br>
+  score
 
 * **Success Response:**
 
