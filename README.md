@@ -6,7 +6,7 @@
 * **URL**
 
   api/v1/players
-yo
+
 * **Method:**
   
   <_The request type_>
